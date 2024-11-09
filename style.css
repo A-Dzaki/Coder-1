@@ -47,10 +47,67 @@ nav {
     width: 100%;
     border-radius: 10px;
 }
-.gambarproduk1 {
-    width: 50px;
+.gambarprouk1 {
+    width: 50%;
     border-radius: 10px;
 }
 .container_produk:first-child {
     grid-column: span 2;
+}
+@media (max-width: 768px) {
+    .gambar-promosi {
+        grid-template-columns: 1fr;
+        max-width: 90%;
+    }
+    .navbar {
+        margin-right: 10px;
+    }
+    .logoicon {
+        width: 120px;
+        margin-left: 15px;
+    }
+}
+
+/* Mobile Styles */
+@media (max-width: 480px) {
+    nav {
+        flex-direction: column;
+    }
+    .logoicon {
+        width: 100px;
+        margin-left: 0;
+    }
+    .navbar {
+        flex-direction: column;
+        margin-right: 0;
+    }
+    .navitem {
+        padding: 8px;
+    }
+    .gambar-promosi {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 5px;
+        max-width: 100%;
+        margin: 20px auto;
+        padding: 10px;
+    }
+    .container_produk {
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        padding: 5px;
+    }
+    .gambarproduk {
+        width: auto;
+        border-radius: 10px;
+    }
+    .backgrond {
+        width: 100vh;
+        margin-left: 0cm;
+    }
+    .header-picture {
+        width: 100%;
+    }
 }
