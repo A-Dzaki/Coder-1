@@ -1,0 +1,56 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+.logoicon {
+    width: 150px;
+    margin: 5px;
+    margin-left: 35px;
+}
+.navbar {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+.navitem {
+    border: 1px;
+    padding: 12px;
+    align-items: center;
+    color: #000000;
+}
+.backgrond {
+    display: flex;
+    justify-content: center;
+}
+.header-picture {
+    width: 100vw;
+}
+.header1 {
+    text-align: center;
+}
+.gambar-promosi {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+}
+.container_produk {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 10px;
+}
+.gambarproduk {
+    width: 100%;
+    border-radius: 10px;
+}
+.gambarproduk1 {
+    width: 50px;
+    border-radius: 10px;
+}
+.container_produk:first-child {
+    grid-column: span 2;
+}
